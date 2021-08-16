@@ -1,0 +1,29 @@
+DESCRIPTION
+
+
+PREDICTOR
+
+time        T   "days" "time"    0	310
+
+INPUTS
+
+
+OBSERVABLES
+
+f_hsc_epcr C "au" "conc." 0 0 "100*f1h"
+
+c_hsc_epcr C "au" "conc." 0 0 "n1h"
+
+
+ERRORS
+
+
+f_hsc_epcr "sd_f_hsc_epcr"
+
+c_hsc_epcr "sd_c_hsc_epcr"
+
+
+CONDITIONS
+
+
+
