@@ -1,0 +1,76 @@
+DESCRIPTION
+
+
+PREDICTOR
+
+time        T   "days" "time"    0	310
+
+INPUTS
+
+a_1hh    "step1(t, a_1hh_unp, tau_fgd, a_1hh_tpo)"
+a_1hl    "step1(t, a_1hl_unp, tau_fgd, a_1hl_tpo)"
+
+a_2hh    "step1(t, a_2hh_unp, tau_fgd, a_2hh_tpo)"
+a_2hl    "step1(t, a_2hl_unp, tau_fgd, a_2hl_tpo)"
+a_2ll    "step1(t, a_2ll_unp, tau_fgd, a_2ll_tpo)"
+a_2lh    "step1(t, a_2lh_unp, tau_fgd, a_2lh_tpo)"
+a_2l_mkp1    "step1(t, a_2l_mkp1_unp, tau_fgd, a_2l_mkp1_tpo)"
+
+a_3hh    "step1(t, a_3hh_unp, tau_fgd, a_3hh_tpo)"
+a_3hl    "step1(t, a_3hl_unp, tau_fgd, a_3hl_tpo)"
+a_3ll    "step1(t, a_3ll_unp, tau_fgd, a_3ll_tpo)"
+a_3lh    "step1(t, a_3lh_unp, tau_fgd, a_3lh_tpo)"
+
+a_4hcm    "step1(t, a_4hcm_unp, tau_fgd, a_4hcm_tpo)"
+a_4hcl    "step1(t, a_4hcl_unp, tau_fgd, a_4hcl_tpo)"
+a_4lcm    "step1(t, a_4lcm_unp, tau_fgd, a_4lcm_tpo)"
+a_4lcl    "step1(t, a_4lcl_unp, tau_fgd, a_4lcl_tpo)"
+
+a_cmp_mkp2    "step1(t, a_cmp_mkp2_unp, tau_fgd, a_cmp_mkp2_tpo)"
+a_cmp_mep    "step1(t, a_cmp_mep_unp, tau_fgd, g_a_cmp_mep_tpo*a_cmp_mep_unp)"
+a_cmp_gmp    "step1(t, a_cmp_gmp_unp, tau_fgd, g_a_cmp_gmp_tpo*a_cmp_gmp_unp)"
+
+a_mkp1    "step1(t, a_mkp1_unp, tau_fgd, a_mkp1_tpo)"
+a_mkp2    "step1(t, a_mkp2_unp, tau_fgd, a_mkp2_tpo)"
+a_p    "step1(t, a_p_unp, tau_fgd, g_a_p_tpo*a_p_unp)"
+
+q_2h    "step1(t, q_2h_unp, tau_fgd, q_2h_tpo)"
+q_3h    "step1(t, q_3h_unp, tau_fgd, q_3h_tpo)"
+q_4h    "step1(t, q_4h_unp, tau_fgd, q_4h_tpo)"
+
+q_2l    "step1(t, q_2l_unp, tau_fgd, q_2l_tpo)"
+q_3l    "step1(t, q_3l_unp, tau_fgd, q_3l_tpo)"
+q_4l    "step1(t, q_4l_unp, tau_fgd, q_4l_tpo)"
+
+l_1h    "step1(t, l_1h_unp, tau_fgd, l_1h_tpo)"
+l_2h    "step1(t, l_2h_unp, tau_fgd, el_2h_tpo*(a_2hh_tpo+a_2hl_tpo+2*(q_2h_tpo+d_2h_unp)))"
+l_3h    "step1(t, l_3h_unp, tau_fgd, el_3h_tpo*(a_3hh_tpo+a_3hl_tpo+2*(q_3h_tpo+d_3h_unp)))"
+l_4h    "step1(t, l_4h_unp, tau_fgd, el_4h_tpo*(a_4hcl_tpo+a_4hcm_tpo+2*(q_4h_tpo+d_4h_unp)))"
+
+l_2l    "step1(t, l_2l_unp, tau_fgd, el_2l_tpo*(a_2ll_tpo+a_2lh_tpo+a_2l_mkp1_tpo+2*(q_2l_tpo+d_2l_unp)))"
+l_3l    "step1(t, l_3l_unp, tau_fgd, el_3l_tpo*(a_3ll_tpo+a_3lh_tpo+2*(q_3l_tpo+d_3l_unp)))"
+l_4l    "step1(t, l_4l_unp, tau_fgd, el_4l_tpo*(a_4lcl_tpo+a_4lcm_tpo+2*(q_4l_tpo+d_4l_unp)))"
+
+l_cmp    "step1(t, l_cmp_unp, tau_fgd, l_cmp_tpo)"
+l_mkp1    "step1(t, l_mkp1_unp, tau_fgd, l_mkp1_tpo)"
+l_mkp2    "step1(t, l_mkp2_unp, tau_fgd, l_mkp2_tpo)"
+
+
+OBSERVABLES
+
+num_mkp_obs C "au" "conc." 0 0 "(cmkp/init_n1h)*num_n1h"
+
+rho_plt_obs C "au" "conc." 0 0 "(cmkp1/init_n1h)*r_mk_mkp1*r_plt*num_n1h/(2000*1000)"
+
+nf_plt C "au" "conc." 0 0 "fplt/f1h"
+
+ERRORS
+
+num_mkp_obs "sd_num_mkp_obs"
+
+rho_plt_obs "sd_rho_plt_obs"
+
+nf_plt "sd_nf_plt"
+
+CONDITIONS
+

@@ -1,0 +1,64 @@
+DESCRIPTION
+
+
+PREDICTOR
+
+time        T   "days" "time"    0	310
+
+INPUTS
+
+
+OBSERVABLES
+
+nf_hsc C "au" "conc." 0 0 "f12/f1h"
+nf_mpp C "au" "conc." 0 0 "f3/f1h"
+nf_hpc1 C "au" "conc." 0 0 "f4/f1h"
+
+nf_hsc_h C "au" "conc." 0 0 "f12h/f1h"
+nf_mpp_h C "au" "conc." 0 0 "f3h/f1h"
+nf_hpc1_h C "au" "conc." 0 0 "f4h/f1h"
+
+nf_hsc_l C "au" "conc." 0 0 "f12l/f1h"
+nf_mpp_l C "au" "conc." 0 0 "f3l/f1h"
+nf_hpc1_l C "au" "conc." 0 0 "f4l/f1h"
+
+nf_clp C "au" "conc." 0 0 "fcl/f1h"
+nf_cmp C "au" "conc." 0 0 "fcm/f1h"
+
+nf_mep C "au" "conc." 0 0 "fmep/f1h"
+nf_gmp C "au" "conc." 0 0 "fgmp/f1h"
+
+nf_mkp C "au" "conc." 0 0 "fmkp/f1h"
+nf_mkp_48hi C "au" "conc." 0 0 "fmkp2/f1h"
+nf_mkp_48lo C "au" "conc." 0 0 "fmkp1/f1h"
+
+
+ERRORS
+
+
+nf_hsc "sd_nf_hsc"
+nf_mpp "sd_nf_mpp"
+nf_hpc1 "sd_nf_hpc1"
+
+nf_hsc_h "sd_nf_hsc_h"
+nf_mpp_h "sd_nf_mpp_h"
+nf_hpc1_h "sd_nf_hpc1_h"
+
+nf_hsc_l "sd_nf_hsc_l"
+nf_mpp_l "sd_nf_mpp_l"
+nf_hpc1_l "sd_nf_hpc1_l"
+
+nf_clp "sd_nf_clp"
+nf_cmp "sd_nf_cmp"
+
+nf_mep "sd_nf_mep"
+nf_gmp "sd_nf_gmp"
+
+nf_mkp "sd_nf_mkp"
+nf_mkp_48hi "sd_nf_mkp_48hi"
+nf_mkp_48lo "sd_nf_mkp_48lo"
+
+
+CONDITIONS
+
+

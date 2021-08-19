@@ -1,0 +1,57 @@
+DESCRIPTION
+
+
+PREDICTOR
+
+time        T   "days" "time"    0	600
+
+INPUTS
+
+
+OBSERVABLES
+
+x_hsc C "au" "conc." 0 0 "x12"
+x_mpp C "au" "conc." 0 0 "x3"
+x_hpc1 C "au" "conc." 0 0 "x4"
+
+x_hsc201h_hi C "au" "conc." 0 0 "x1h"
+x_hsc_hi C "au" "conc." 0 0 "x12h"
+x_mpp_hi C "au" "conc." 0 0 "x3h"
+x_hpc1_hi C "au" "conc." 0 0 "x4h"
+
+x_hsc_lo C "au" "conc." 0 0 "x12l"
+x_mpp_lo C "au" "conc." 0 0 "x3l"
+x_hpc1_lo C "au" "conc." 0 0 "x4l"
+
+x_mkp  C "au" "conc." 0 0 "(r_mkp1_2l*s2*xmkp1+r_mkp2_cmp*rcm*r4*r3*xmkp2)/(r_mkp1_2l*s2+r_mkp2_cmp*rcm*r4*r3)"
+x_mkp_48hi C "au" "conc." 0 0 "xmkp2"
+x_mkp_48lo C "au" "conc." 0 0 "xmkp1"
+
+
+ERRORS
+x_hsc "sd_x_hsc"
+x_mpp "sd_x_mpp" 
+x_hpc1 "sd_x_hpc1"
+
+x_hsc201h_hi "sd_x_hsc201h_hi"
+x_hsc_hi "sd_x_hsc_hi"
+x_mpp_hi "sd_x_mpp_hi" 
+x_hpc1_hi "sd_x_hpc1_hi"
+
+x_hsc_lo "sd_x_hsc_lo"
+x_mpp_lo "sd_x_mpp_lo" 
+x_hpc1_lo "sd_x_hpc1_lo"
+
+x_mkp  "sd_x_mkp"
+x_mkp_48hi "sd_x_mkp_48hi"
+x_mkp_48lo "sd_x_mkp_48lo"
+
+
+CONDITIONS
+
+
+
+
+
+
+

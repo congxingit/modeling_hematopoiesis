@@ -1,0 +1,5 @@
+time (days),nc_hpc1,nc_hpc1_h,nc_hpc1_l,nc_mpp,nc_mpp_h,nc_mpp_l,nc_hsc,nc_hsc_h,nc_hsc_l,nc_mkp,nc_mkp_48hi,nc_mkp_48lo,nc_clp,nc_gmp,nc_cmp,nc_mep,nc_hpc1_std,nc_hpc1_h_std,nc_hpc1_l_std,nc_mpp_std,nc_mpp_h_std,nc_mpp_l_std,nc_hsc_std,nc_hsc_h_std,nc_hsc_l_std,nc_mkp_std,nc_mkp_48hi_std,nc_mkp_48lo_std,nc_clp_std,nc_gmp_std,nc_cmp_std,nc_mep_std
+10,,,,,,,,,,8.545016357,5.879316148,2.677713136,,,,,,,,,,,,,,0.742570836,0.472004556,0.323265366,,,,
+59,,,,,,,,,,17.07042801,12.49742649,4.598816544,,,,,,,,,,,,,,4.667739526,3.612478554,1.070036815,,,,
+120,,,,,,,,,,10.36742966,8.284140902,2.080375,,,,,,,,,,,,,,5.582354662,4.377141994,1.208853884,,,,
+488,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

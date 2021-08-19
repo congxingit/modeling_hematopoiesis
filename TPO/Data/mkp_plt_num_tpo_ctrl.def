@@ -1,0 +1,28 @@
+DESCRIPTION
+
+
+PREDICTOR
+
+time        T   "days" "time"    0	310
+
+INPUTS
+
+
+OBSERVABLES
+
+num_mkp_obs C "au" "conc." 0 0 "(cmkp/init_n1h)*num_n1h"
+
+rho_plt_obs C "au" "conc." 0 0 "(cmkp1/init_n1h)*r_mk_mkp1*r_plt*num_n1h/(2000*1000)"
+
+
+ERRORS
+
+num_mkp_obs "sd_num_mkp_obs"
+
+rho_plt_obs "sd_rho_plt_obs"
+
+CONDITIONS
+
+
+
+
